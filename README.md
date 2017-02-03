@@ -4,7 +4,7 @@ Docker image to push to Relish
 This project contains a Docker image for pushing Cucumber Features to Relish Cloud (relishapp.com)
 This image is ideal for CI servers which run the build steps on Docker.
 
-The RELISH_API_TOKEN is intentionally set as argument rather than an environment variable due to limitations in some CI servers which call Docker.
+The `RELISH_API_TOKEN` is intentionally set as an argument rather than an environment variable due to limitations in some CI servers which call Docker.
 
 ## Usage
 
