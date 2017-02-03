@@ -1,11 +1,8 @@
 #!/bin/sh
 
-function usage {
-   echo "docker run -v $PWD:/src:ro craigbarrau/relish <RELISH_API_TOKEN> <PROJECT_NAME>"
-}
-
 if [ "$#" -ne 2 ]; then
-    usage
+    echo "docker run -v $PWD:/src:ro craigbarrau/relish <RELISH_API_TOKEN> <PROJECT_NAME>"
+    exit 1
 fi
 
 echo "============================================"
