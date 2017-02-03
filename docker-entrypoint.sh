@@ -19,4 +19,4 @@ cat <<. >~/.relish
 api_token: $1
 .
 
-exec "relish push $2"
+relish push $2
