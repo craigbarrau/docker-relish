@@ -11,7 +11,8 @@ The RELISH_API_TOKEN is intentionally set as argument rather than an environment
 ### Command Line
 
 Mount the directory containing your project at `/src` and set the following:
-    `docker run -v $PWD:/src:ro craigbarrau/relish <RELISH_API_TOKEN> <RELISH_PROJECT_NAME>`
+
+`docker run -v $PWD:/src:ro craigbarrau/relish <RELISH_API_TOKEN> <RELISH_PROJECT_NAME>`
 
 ### Bitbucket Pipelines
 
