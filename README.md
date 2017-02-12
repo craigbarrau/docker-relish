@@ -18,6 +18,7 @@ Mount the directory containing your project at `/src` and set the following:
 
 1. Add an Environment Variable to Bitbucket Pipelines for the `RELISH_API_TOKEN` and `RELISH_PROJECT_NAME`. If you have done a relish push before you can get the `RELISH_API_TOKEN` from `~/.relish`.
 2. Create a `bitbucket-pipelines.yml` file in your project root.
+
 ```
 image: craigbarrau/relish
 
@@ -25,5 +26,5 @@ pipelines:
   default:
     - step:
         script:
-          - ${RELISH_API_TOKEN} ${RELISH_PROJECT_NAME}
+          - docker-entrypoint ${RELISH_API_TOKEN} ${RELISH_PROJECT_NAME}
 ```
